@@ -8,7 +8,8 @@
 
 <?import javafx.scene.text.Text?>
 <VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.todoergui.todoer.gui.controllers.TodoController"
-      prefHeight="400.0" prefWidth="600.0"  >
+      prefHeight="400.0" prefWidth="600.0"
+      stylesheets="@styles/style.css" >
 
     <ToolBar>
         <Button text="Notes" onAction="#goBack"/>

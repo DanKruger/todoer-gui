@@ -10,7 +10,7 @@ public class TodoController {
     @FXML
     protected void goBack(){
         try {
-            Todoer.changeScene("/org/todoergui/todoer/note-view.fxml","Notes");
+            Todoer.changeScene("/org/todoergui/todoer/note-view.fxml","Todoer ~ Notes");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

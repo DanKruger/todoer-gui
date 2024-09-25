@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Objects;
 
 public class Todoer extends Application {
     private static Stage primaryStage;
@@ -17,7 +18,8 @@ public class Todoer extends Application {
         primaryStage = stage;
         FXMLLoader fxmlLoader = new FXMLLoader(Todoer.class.getResource("note-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1000, 800);
-        primaryStage.setTitle("App for bean lovers");
+        changeScene("note-view.fxml", "Todoer ~ Notes");
+        primaryStage.setTitle("Todoer ~ Notes");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -36,5 +38,8 @@ public class Todoer extends Application {
             throw new RuntimeException(e);
         }
         launch();
+    }
+    public static Backend getServer() {
+        return server;
     }
 }

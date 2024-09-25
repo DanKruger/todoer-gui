@@ -1,0 +1,41 @@
+/* Mimicking a GTK-like theme in JavaFX */
+
+/* General styling */
+.root {
+    -fx-font-family: "Inter"; /* Change to your GTK theme font */
+    -fx-base: #f0f0f0; /* Background color */
+}
+/*!* Label styling *!*/
+/*.label {*/
+/*    -fx-text-fill: #333; !* Text color *!*/
+/*    -fx-font-size: 14px;*/
+/*}*/
+
+/*.list-view{*/
+/*    -fx-border-radius: 150px;*/
+/*}*/
+
+/*.text-area{*/
+/*    -fx-border-width: 2px;*/
+/*}*/
+/*.text-area:focused{*/
+/*    -fx-border-color: lightblue;*/
+/*}*/
+
+/*!* Button styling *!*/
+/*.button {*/
+/*    -fx-background-color: #007BFF; !* Button background color *!*/
+/*    -fx-text-fill: white; !* Text color *!*/
+/*    -fx-padding: 10px 20px; !* Button padding *!*/
+/*    -fx-background-radius: 5px; !* Rounded corners *!*/
+/*}*/
+
+/*.button:hover {*/
+/*    -fx-background-color: #0056b3; !* Hover color *!*/
+/*}*/
+
+/*!* VBox or other layout styling *!*/
+/*.vbox {*/
+/*    -fx-padding: 10; !* Padding around VBox *!*/
+/*    -fx-spacing: 10; !* Space between children *!*/
+/*}*/

@@ -12,7 +12,8 @@
 <?import javafx.scene.layout.HBox?>
 <VBox alignment="TOP_CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.todoergui.todoer.gui.controllers.NoteController"
-      minHeight="800.0" minWidth="1000.0" >
+      minHeight="800.0" minWidth="1000.0"
+        stylesheets="@styles/style.css">
     <padding>
         <Insets bottom="20.0"/>
     </padding>
@@ -27,11 +28,12 @@
 
         <VBox spacing="5" alignment="CENTER">
 
-            <TextArea prefHeight="50" fx:id="noteTitleInput" promptText="Title"/>
+            <TextArea styleClass="text-area" prefHeight="50" fx:id="noteTitleInput" promptText="Title"/>
 
-            <TextArea fx:id="noteContentInput" promptText="Content"/>
+            <TextArea styleClass="text-area" fx:id="noteContentInput" promptText="Content"/>
 
             <Button fx:id="formBtn" text="Add Item" onAction="#handleAddItem"/>
+            <Button fx:id="clearBtn" text="Cancel" onAction="#cancelUpdate"/>
 
         </VBox>
 

@@ -13,6 +13,7 @@ module org.todoergui.todoer {
 
     exports org.todoergui.todoer.database.models;
     exports org.todoergui.todoer.database.schemas;
+    opens org.todoergui.todoer.database.schemas to ormlite.jdbc;
     exports org.todoergui.todoer.database;
     exports org.todoergui.todoer.gui;
     opens org.todoergui.todoer.gui to javafx.fxml;

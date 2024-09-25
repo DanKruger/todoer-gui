@@ -1,6 +1,7 @@
 package org.todoergui.todoer.database.models;
 
 import org.todoergui.todoer.database.schemas.NoteSchema;
+import org.todoergui.todoer.gui.GuiNote;
 
 import java.text.MessageFormat;
 
@@ -37,6 +38,12 @@ public class Note {
         this.id = schema.getId();
         this.title = schema.getTitle();
         this.content = schema.getContent();
+    }
+
+    public Note(GuiNote note) {
+        this.id = note.getNoteId();
+        this.title = note.getTitle();
+        this.content = note.getContent();
     }
 
     public Note() {

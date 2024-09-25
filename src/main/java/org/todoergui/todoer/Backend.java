@@ -7,10 +7,10 @@ import java.sql.SQLException;
 public class Backend {
     private static DatabaseManager database;
 
-    public static void setDatabase(DatabaseManager newDb){
+    public void setDatabase(DatabaseManager newDb){
             Backend.database = newDb;
     }
-    public static DatabaseManager getDatabase(){
+    public DatabaseManager getDatabase(){
         return Backend.database;
     }
 
